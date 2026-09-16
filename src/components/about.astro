@@ -1,0 +1,50 @@
+---
+
+---
+
+<section id="about" class="py-12 border-t border-[#ffffff10] text-[var(--white)]">
+  <div class="max-w-5xl mx-auto">
+    <h2 class="text-lg text-[var(--sec)] mb-2 shiny-sec">Get to know me</h2>
+    <h3 class="text-4xl md:text-5xl font-medium mb-8">About Me</h3>
+
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
+      <!-- Bio -->
+      <div class="space-y-4 text-[var(--white-icon)] text-base leading-relaxed">
+        <p>
+          I am an Information Technology undergraduate at <span class="text-[var(--white)] font-medium">General Sir John Kotelawala Defence University (KDU)</span> with a primary focus on backend engineering, database design, and systems architecture.
+        </p>
+        <p>
+          Alongside core software development, I am actively expanding my expertise in cloud infrastructure and application deployment, exploring how to build, containerize, and scale services efficiently using tools like <span class="text-[var(--sec)] font-medium">Docker</span> and <span class="text-[var(--sec)] font-medium">Amazon Web Services (AWS)</span>.
+        </p>
+        <p>
+          What drives me most is taking emerging technologies, turning them into practical tools, and building reliable systems that users can directly interact with—whether that is engineering RESTful services with Spring Boot and PostgreSQL, developing interactive augmented reality experiences with Unity, or containerizing applications with Docker.
+        </p>
+      </div>
+
+      <!-- Skills Grid -->
+      <div class="space-y-4">
+        <h4 class="text-2xl font-semibold text-[var(--white)] mb-4">Skills & Technologies</h4>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+          {[
+            { label: "Languages", items: "Java, Python, C#, SQL" },
+            { label: "Backend & Cloud", items: "Spring Boot, REST APIs, PostgreSQL, PostGIS, Docker, AWS" },
+            { label: "Networking & OS", items: "Cisco Packet Tracer, Linux" },
+            { label: "Mobile & AR", items: "Unity, Vuforia, Android Studio" },
+            { label: "Data & ML", items: "Pandas, Scikit-learn, Jupyter Notebook" },
+            { label: "Design & Multimedia", items: "Premiere Pro, Animate, Blender" },
+            { label: "Tools & Architecture", items: "Git/GitHub, Swagger, MVC, Microservices" },
+          ].map((skill) => (
+            <div class="bg-[#1414149c] border border-[var(--white-icon-tr)] rounded-xl p-4 hover:border-[var(--sec)] transition-all duration-300 hover:bg-[#1a1a2e9c]">
+              <span class="text-[var(--sec)] text-sm font-semibold uppercase tracking-wider block mb-1.5">
+                {skill.label}
+              </span>
+              <span class="text-[var(--white-icon)] text-sm leading-relaxed">
+                {skill.items}
+              </span>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
